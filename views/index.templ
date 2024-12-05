@@ -1,23 +1,21 @@
 package views
 
-import (
-	"github.com/aaron-g-sanchez/PROJECTS/WORKOUT-TRACKER/views/components"
-)
+import "github.com/aaron-g-sanchez/PROJECTS/WORKOUT-TRACKER/views/components"
 
 templ Index() {
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <script src='https://unpkg.com/htmx.org@2.0.3' defer></script>
-      <meta charset='UTF-8' />
-      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-      <title>WORKOUT TRACKER</title>
-    </head>
-    <body>
-    @components.Header()
-      <main>
-        <h2>Welcome user</h2>
-      </main>
-    </body>
-  </html>
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<script src="https://unpkg.com/htmx.org@2.0.3" defer></script>
+			<title>WORKOUT TRACKER</title>
+		</head>
+		<body>
+			@components.Header()
+			<main>
+				<h2>Welcome user</h2>
+			</main>
+		</body>
+	</html>
 }
